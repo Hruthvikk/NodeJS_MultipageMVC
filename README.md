@@ -1,4 +1,11 @@
 # NodeJS_MultipageMVC
+# How to Run?
+- Download code
+- Open in visual studio code
+- open terminal
+- run "npm install" command
+- run "node initdb.js" command
+- run "node app.js" command
 
 1. Home Page
 ![njsmvc1](https://user-images.githubusercontent.com/101742067/208534722-05ef48f0-05f7-4c92-a8be-395b3e8bb8ab.png)
