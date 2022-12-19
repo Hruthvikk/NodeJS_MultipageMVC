@@ -1,0 +1,67 @@
+{{! // StAuth10222: I Hruthvik Chokshi, 000813765 certify that this material is my original work. No other person's work has been used without due acknowledgement. I have not made my work available to anyone else.}}
+{{>header}}
+
+{{>navigation}}
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>Editors</h2>
+      <p>Only editors should be able to view this page!</p>
+    </div>
+      <h4>Users</h4>
+      <table>
+      <thead>
+        <th>Username<th>
+        <th>Password<th>
+        <th>Level<th>
+        <th>Delete<th>
+        </thead>
+        <tbody>
+        {{#userResults}}
+          <tr>
+            <td>{{username}}</td>
+            <td></td>
+            <td>{{password}}</td>
+            <td></td>
+            <td>{{level}}</td>
+            <td></td>
+            <td><a href="/editors/delete{{username}}">D</a></td>
+          </tr>
+          {{/userResults}}
+        </tbody>
+      </table>
+    <h4>Articles</h4>
+    <table>
+        <thead>
+        <th>Title<th>
+        <th>Author<th>
+        <th>Delete<th>
+        </thead>
+        <tbody>
+        {{#articles}}
+        <tr>
+          <td>
+              {{title}}
+          </td>
+          <td></td>
+          <td>
+              {{username}}
+          </td>
+          <td></td>
+          <td>
+            <a href="/editors/articledelete{{title}}">D</a>
+          </td>
+        </tr>
+        {{/articles}}
+        </tbody>
+      </table>
+  </div>
+
+  
+
+  {{>sidebar}}
+
+</div>
+
+{{>footer}}
